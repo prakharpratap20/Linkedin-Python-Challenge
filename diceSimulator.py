@@ -14,4 +14,5 @@ def rollDice(*dice, numTrials=1000000):
     for outcome in range(len(dice), sum(dice) + 1):
         print(f"{outcome}\t{counts[outcome] * 100 / numTrials :0.2f}%")
         
-rollDice(2)
+rollDice(6, 6, 6, 6, 6)
+# here 5 dices having 6 faces each are being used as an example 
